@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Downloader - Gennaro Palumbo Photographer</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -22,7 +22,7 @@ h1 {letter-spacing: 6px}
   <h1>GENNARO PALUMBO PHOTOGRAPHER</h1>
   
   <div class="w3-padding-32">
-<h4>Questa è la pagina di accesso per il download dei file dei vostri eventi, utilizzate il codice fornitovi in confezione nel modulo sottostante, per scaricare i vostri file.</h4>
+<h4>Questa è la pagina di accesso per il download dei file dei vostri eventi, utilizzate il codice fornitovi in confezione nel modulo sottostante e cliccare conferma per scaricare i vostri file.</h4>
   </div>
 </header>
 
@@ -44,8 +44,12 @@ function validatePass(){
       window.open("https://mega.nz/folder/rUNFzayJ#1_1ZWU6E4vXDCzNhtbK2ug");
           return true;
       }
+	  if(document.getElementById('password').value == 'comunionedesimone'){
+	  	window.open("https://mega.nz/folder/3JUWzbrD#ZTGqXbhNSMbhesH55SAiJg");
+		  return true;
+	  }
   else{
-        alert('Il codice inserito è inesistente.');
+        alert('Il codice inserito non è corretto o inesistente. Riprovare.');
         return false;
     }
 }
